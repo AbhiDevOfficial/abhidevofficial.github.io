@@ -31,6 +31,40 @@ h1 {
   font-size: 2em;
 }
 
+#menu-slider.hide {
+    left: -100%;
+}
+#menu-slider {
+    height: 100%;
+    background-color: #2f3e4e;
+    overflow-y: auto;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.4s;
+    z-index: 9999;
+}
+#menu-slider ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+#menu-slider ul li {
+    list-style-type: none;
+}
+#menu-slider ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+#menu-slider ul li a:hover {
+    color: #d74703;
+}
+
 @media all and (max-width: 43em) {
   .container {
     padding: 0;
@@ -42,6 +76,17 @@ h1 {
   body {
     background: #dbd5d2;
   }
+}
+
+footer{
+    background-color: #272727;
+}
+footer #copyright {
+    background-color: #343434;
+}
+
+footer i{
+    font-size: 22px;
 }
 
 @media all and (max-width: 32em) {
